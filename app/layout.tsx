@@ -1,9 +1,19 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Orbitron, Plus_Jakarta_Sans } from 'next/font/google';
 import AOSAnimation from '@/utils/AosInit';
 import NavBar from '@/components/Navbar/NavBar';
 
-const inter = Inter({ subsets: ['latin'] });
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  variable: '--font-orbitron',
+  display: 'swap',
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-jakarta',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Ether Edge Media',
@@ -18,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${jakarta.variable} ${orbitron.variable}`}>
         <NavBar />
         <AOSAnimation>{children}</AOSAnimation>
       </body>

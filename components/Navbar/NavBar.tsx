@@ -64,13 +64,13 @@ const NavBar = () => {
               toggle['navbar'] ? styles.navMove : styles.displayNav
             }`}
           >
-            <aside className='flex justify-center'>
+            <aside className=' w-[95%] md:w-[50%] '>
               {/* nav Links */}
 
               <ul
-                data-aos='fade-right'
-                data-aos-duration='1500'
-                className={` ${styles.navItems} flex flex-col`}
+                // data-aos='fade-right'
+                // data-aos-duration='1500'
+                className={` ${styles.navItems} flex flex-col ml-5 md:ml-[60px] `}
               >
                 {linkList.map(({ id, title, url }) => (
                   <li
