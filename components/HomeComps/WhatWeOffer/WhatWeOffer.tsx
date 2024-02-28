@@ -53,7 +53,7 @@ export const WhatWeOffer = () => {
               <ul
                 data-aos='fade-left'
                 key={id}
-                className='flex flex-col justify-center bg-red-800 w-full  md:w-[48%] px-5 py-8  lg:py-[1em] lg:px-[2em] md:min-h-[180px]'
+                className='flex flex-col justify-center bg-red-800 w-full  md:w-[48%] px-5 py-8  lg:py-[1em] lg:px-[2em] md:min-h-[180px] circleHover'
               >
                 <li>
                   <h4 className='mb-4'>{title} </h4>

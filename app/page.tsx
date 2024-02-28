@@ -1,6 +1,9 @@
+import CaseStudy from '@/components/CaseStudy/CaseStudy';
+import Explore from '@/components/Explore/Explore';
 import HeroSection from '@/components/HomeComps/HeroSection/HeroSection';
 import Unravel from '@/components/HomeComps/Unravel/Unravel';
 import { WhatWeOffer } from '@/components/HomeComps/WhatWeOffer/WhatWeOffer';
+import WhatPeople from '@/components/Reviews/WhatPeople';
 
 export default function Home() {
   return (
@@ -8,6 +11,9 @@ export default function Home() {
       <HeroSection />
       <Unravel />
       <WhatWeOffer />
+      <CaseStudy />
+      <WhatPeople />
+      <Explore />
     </main>
   );
 }

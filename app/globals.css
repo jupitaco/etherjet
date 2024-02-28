@@ -230,11 +230,12 @@ select {
 /* Unravel */
 .circleHover {
   position: relative;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: transparent;
   overflow: hidden;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   transition: background-color 0.5s ease;
+  border-radius: 50px 50px 100px 100px;
 }
 
 .circleHover::before {
@@ -273,6 +274,67 @@ select {
   background-size: 100% 100%;
 }
 /* WHat we offer */
+
+/* CaseStudy */
+.swipeBtns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100000;
+}
+/* CaseStudy */
+
+/* Review */
+
+.typeOfPeople {
+  article {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 75.84%);
+    }
+  }
+}
+/* Review */
+/* Explore */
+
+.explore {
+  background: url('../public/assets/exploreBG.png') center center no-repeat;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  height: 700px;
+  padding: 48px 26px;
+  border-radius: 100px 2px 100px 100px;
+}
+
+.explore article {
+  border-radius: 20px;
+  padding: 18px 26px;
+  background: url('../public/assets/exploreBG2.png') center center no-repeat;
+  background-size: cover;
+}
+
+.explore article input,
+.explore article textarea {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px var(--grey1);
+}
+
+.explore article input:focus,
+.explore article textarea:focus {
+  outline: none;
+}
+
+/* Explore */
 
 /* === Home === */
 
@@ -319,4 +381,24 @@ select {
       no-repeat;
     background-size: cover;
   } */
+
+  .explore {
+    background: url('../public/assets/exploreBG.png') center center no-repeat;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    height: 700px;
+    padding: 48px 12px;
+    border-radius: 100px 2px 100px 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .swipeBtns {
+    position: absolute;
+    top: unset;
+    left: 0;
+    right: 0;
+    bottom: -14%;
+    z-index: 100000;
+  }
 }

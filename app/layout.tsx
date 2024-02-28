@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Orbitron, Plus_Jakarta_Sans } from 'next/font/google';
 import AOSAnimation from '@/utils/AosInit';
 import NavBar from '@/components/Navbar/NavBar';
+import Footer from '@/components/Footer/Footer';
 
 const orbitron = Orbitron({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${jakarta.variable} ${orbitron.variable}`}>
         <NavBar />
         <AOSAnimation>{children}</AOSAnimation>
+        <Footer />
       </body>
     </html>
   );
