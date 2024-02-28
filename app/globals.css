@@ -22,6 +22,7 @@ body {
   color: var(--white);
   background: var(--black);
   font-family: var(--font-jakarta) sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -53,9 +54,14 @@ h2 {
   font-weight: 700;
 }
 
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 select {
@@ -101,7 +107,7 @@ select {
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -2px;
+    margin: -3px;
     border-radius: inherit;
     background: linear-gradient(
       180deg,
@@ -203,6 +209,71 @@ select {
   }
 }
 
+/* Unravel */
+.unravel {
+  background: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.32) 44.66%,
+      #000000 100%
+    ),
+    radial-gradient(
+      72.53% 113.81% at 88.58% 24.1%,
+      rgba(115, 136, 255, 0.7) 0%,
+      rgba(202, 115, 255, 0.7) 50.34%,
+      rgba(255, 115, 157, 0.7) 100%
+    ),
+    url('../public/assets/unravleBG.gif') top center no-repeat;
+  background-size: cover;
+}
+/* Unravel */
+/* Unravel */
+.circleHover {
+  position: relative;
+  padding: 20px;
+  background-color: transparent;
+  overflow: hidden;
+  border: solid 1px red;
+  transition: background-color 0.5s ease;
+}
+
+.circleHover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: var(--radial);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  /* transition: width 0.5s ease, height 0.5s ease; */
+  z-index: -1;
+}
+
+.circleHover:hover::before {
+  /* border-radius: 0; */
+  position: absolute;
+  bottom: -50%;
+  left: -20%;
+  width: 200%;
+  height: 200%;
+}
+
+/* WHat we offer */
+.whatWeOffer {
+  background: url('../public/assets/servicesBg.png') center center no-repeat;
+  background-size: cover;
+}
+
+.whatWeOffer article ul {
+  background: url('../public/assets/SBg.png') center center no-repeat;
+  /* background: url('../public/assets/ServiceCardBg.svg') center center no-repeat; */
+  /* background-size: cover; */
+  background-size: 100% 100%;
+}
+/* WHat we offer */
+
 /* === Home === */
 
 @media screen and (max-width: 900px) {
@@ -242,4 +313,10 @@ select {
       text-transform: uppercase;
     }
   }
+
+  /* .whatWeOffer article ul {
+    background: url('../public/assets/ServiceCardBg.svg') center center
+      no-repeat;
+    background-size: cover;
+  } */
 }

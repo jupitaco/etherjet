@@ -4,8 +4,12 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className='homeHero flex flex-col md:flex-row flex-col-reverse justify-between items-center gap-5'>
-      <article className='w-full md:w-5/12'>
+    <section className='container homeHero flex flex-col md:flex-row flex-col-reverse justify-between items-center gap-5'>
+      <article
+        className='w-full md:w-5/12'
+        data-aos='fade-left'
+        data-aos-duration='1500'
+      >
         <h1>Navigating the Future of Web3</h1>
         <p className='my-4'>
           At EtherEdge, we harness the power of decentralization to elevate your
@@ -20,7 +24,11 @@ const HeroSection = () => {
           </button>
         </div>
       </article>
-      <figure className='w-full md:w-6/12 '>
+      <figure
+        data-aos='zoom-out'
+        data-aos-duration='1500'
+        className='w-full md:w-6/12 '
+      >
         <Image src={images.heroImage} alt='EtherEdge Hero gif' />
       </figure>
     </section>
