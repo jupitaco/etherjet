@@ -18,10 +18,14 @@
   @apply w-[90%] lg:w-[88%] mx-auto;
 }
 
+html {
+  font-family: var(--font-jakarta), sans-serif;
+}
+
 body {
   color: var(--white);
   background: var(--black);
-  font-family: var(--font-jakarta) sans-serif;
+  font-family: var(--font-jakarta), sans-serif;
   overflow-x: hidden;
 }
 
@@ -39,7 +43,7 @@ h3,
 h4,
 strong,
 h5 {
-  font-family: var(--font-orbitron) sans-serif;
+  font-family: var(--font-orbitron), sans-serif !important;
 }
 
 h1,

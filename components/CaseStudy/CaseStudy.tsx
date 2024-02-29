@@ -13,27 +13,33 @@ const CaseStudy = () => {
     },
     {
       id: 2,
-      title: 'HeculeX',
+      title: 'PyraQiN',
       url: '/cases-study/herculex',
       imageUrl: images.caseStudy2,
     },
     {
       id: 3,
-      title: 'HeculeX',
+      title: 'Saruya',
       url: '/cases-study/herculex',
       imageUrl: images.caseStudy3,
     },
     {
       id: 4,
-      title: 'HeculeX',
+      title: 'PyraQiN',
       url: '/cases-study/herculex',
       imageUrl: images.caseStudy4,
     },
     {
       id: 5,
-      title: 'HeculeX',
+      title: 'Airborne',
       url: '/cases-study/herculex',
       imageUrl: images.caseStudy5,
+    },
+    {
+      id: 6,
+      title: 'Vortex',
+      url: '/cases-study/herculex',
+      imageUrl: images.caseStudy6,
     },
   ];
 

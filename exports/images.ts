@@ -4,6 +4,7 @@ import caseStudy2 from '@/public/assets/caseStudy2.png';
 import caseStudy3 from '@/public/assets/caseStudy3.png';
 import caseStudy4 from '@/public/assets/caseStudy4.png';
 import caseStudy5 from '@/public/assets/caseStudy5.png';
+import caseStudy6 from '@/public/assets/caseStudy6.png';
 import alice from '@/public/assets/alice.png';
 import blog1 from '@/public/assets/blog1.png';
 import blog2 from '@/public/assets/blog2.png';
@@ -55,5 +56,6 @@ export const images = {
   caseStudy3,
   caseStudy4,
   caseStudy5,
+  caseStudy6,
   alice,
 };

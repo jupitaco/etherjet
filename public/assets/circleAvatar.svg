@@ -8,7 +8,7 @@
 <ellipse id="Paste your image here" cx="60.5421" cy="83.7916" rx="23.8679" ry="23" transform="rotate(-7.95803 60.5421 83.7916)" fill="url(#pattern1)"/>
 </g>
 </g>
-<rect x="35.8388" y="65.0311" width="44" height="44" rx="22" transform="rotate(-7.95803 35.8388 65.0311)" stroke="#008557" stroke-width="2" shape-rendering="crispEdges"/>
+<rect x="35.8388" y="65.0311" width="44" height="44" rx="22" transform="rotate(-7.95803 35.8388 65.0311)" stroke="#008557" strokeWidth="2" shape-rendering="crispEdges"/>
 </g>
 <g id="Avatar05_2" filter="url(#filter1_d_2016_983)">
 <g clip-path="url(#clip1_2016_983)">
@@ -16,7 +16,7 @@
 <ellipse id="Paste your image here_2" cx="283.099" cy="50.6602" rx="23.8679" ry="23" transform="rotate(-7.95803 283.099 50.6602)" fill="url(#pattern2)"/>
 </g>
 </g>
-<rect x="258.395" y="31.8996" width="44" height="44" rx="22" transform="rotate(-7.95803 258.395 31.8996)" stroke="#008557" stroke-width="2" shape-rendering="crispEdges"/>
+<rect x="258.395" y="31.8996" width="44" height="44" rx="22" transform="rotate(-7.95803 258.395 31.8996)" stroke="#008557" strokeWidth="2" shape-rendering="crispEdges"/>
 </g>
 </g>
 <defs>

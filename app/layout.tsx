@@ -16,6 +16,8 @@ const jakarta = Plus_Jakarta_Sans({
   display: 'swap',
 });
 
+console.log(jakarta.variable);
+
 export const metadata: Metadata = {
   title: 'Ether Edge Media',
   description:
