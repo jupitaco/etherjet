@@ -42,7 +42,7 @@ const CaseStudyCard = ({ data }: ICaseStudyCardProps) => {
           },
         }}
         modules={[Autoplay, Navigation, Pagination]}
-        className='mySwiper w-[85%]'
+        className='mySwiper'
       >
         <section className=''>
           {data.map(({ id, title, url, imageUrl }) => (

@@ -3,50 +3,50 @@ import CaseStudyCard from './CaseStudyCard';
 import { images } from '@/exports/images';
 import { ICaseStudy } from '@/Types/types';
 
-const CaseStudy = () => {
+const CaseStudy = ({ title }: { title: string }) => {
   const CaseStudyData: ICaseStudy[] = [
     {
       id: 1,
       title: 'HeculeX',
-      url: '/cases-study/herculex',
+      url: '/case-study/herculex',
       imageUrl: images.caseStudy1,
     },
     {
       id: 2,
       title: 'PyraQiN',
-      url: '/cases-study/herculex',
+      url: '/case-study/pyraqin',
       imageUrl: images.caseStudy2,
     },
     {
       id: 3,
       title: 'Saruya',
-      url: '/cases-study/herculex',
+      url: '/case-study/saruya',
       imageUrl: images.caseStudy3,
     },
     {
       id: 4,
       title: 'PyraQiN',
-      url: '/cases-study/herculex',
+      url: '/case-study/pyraqins-vis',
       imageUrl: images.caseStudy4,
     },
     {
       id: 5,
       title: 'Airborne',
-      url: '/cases-study/herculex',
+      url: '/case-study/airborne',
       imageUrl: images.caseStudy5,
     },
     {
       id: 6,
       title: 'Vortex',
-      url: '/cases-study/herculex',
+      url: '/case-study/vortex',
       imageUrl: images.caseStudy6,
     },
   ];
 
   return (
-    <section className='my-[100px]'>
+    <section id='case-study' className='my-[100px]'>
       <div className=' my-10'>
-        <h2 className='text-center my-2'>Case Studies</h2>
+        <h2 className='text-center my-2'>{title}</h2>
         <hr />
       </div>
 

@@ -43,7 +43,7 @@ h3,
 h4,
 strong,
 h5 {
-  font-family: var(--font-orbitron), sans-serif !important;
+  font-family: var(--font-orbitron), sans-serif;
 }
 
 h1,
@@ -98,7 +98,7 @@ select {
   font-weight: 700;
   border-radius: 25px;
   padding: 0.8em 1.5em;
-  background: 8593e8;
+  background: #8593e8;
 }
 
 .main-btn {
@@ -110,6 +110,7 @@ select {
   background-clip: padding-box;
   border: solid 5px transparent;
   border-radius: 1.8em;
+  font-weight: 700;
 
   &::before {
     content: '';
@@ -124,7 +125,7 @@ select {
     background: linear-gradient(
       180deg,
       #ffffff 0%,
-      rgba(255, 255, 255, 0) 130.75%
+      rgba(1, 1, 1, 0.144) 130.75%
     );
     box-shadow: 0px 0px 11.100000381469727px 0px #ffffff;
   }
@@ -240,15 +241,6 @@ select {
 }
 /* Unravel */
 /* Unravel */
-.circleHover {
-  position: relative;
-  /* padding: 20px; */
-  background-color: transparent;
-  overflow: hidden;
-  /* border: solid 1px red; */
-  transition: background-color 0.5s ease;
-  border-radius: 50px 50px 100px 100px;
-}
 
 .circleHover::before {
   content: '';
@@ -288,11 +280,18 @@ select {
 /* WHat we offer */
 
 /* CaseStudy */
-.swipeBtns {
+.swipeBtns .caseBtnNext {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: -10%;
+  bottom: 0;
+  z-index: 100000;
+}
+
+.swipeBtns .caseBtnPrev {
+  position: absolute;
+  top: 0;
+  right: -10%;
   bottom: 0;
   z-index: 100000;
 }
@@ -350,6 +349,57 @@ select {
 
 /* === Home === */
 
+/* ==CaseStudy Details === */
+
+.goalCard {
+  position: relative;
+  padding: 1em 2em;
+  border: 5px solid transparent;
+  color: var(--white);
+  background: #000000df;
+  background-clip: padding-box;
+  border-radius: 1.8em;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+
+    border-radius: inherit;
+
+    background: radial-gradient(
+        69.43% 69.43% at 50% 50%,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      radial-gradient(
+        60% 51.57% at 50% 50%,
+        #e733e0 0%,
+        rgba(231, 51, 224, 0) 100%
+      ),
+      radial-gradient(
+        54.8% 53% at 50% 50%,
+        #5336e2 0%,
+        rgba(83, 54, 226, 0) 100%
+      );
+
+    /*
+    background: linear-gradient(
+      90deg,
+      #ff3bff 0%,
+      #ecbfbf 38.02%,
+      #5c24ff 75.83%,
+      #d94fd5 100%
+    ); */
+  }
+}
+
+/* ==CaseStudy Details === */
 @media screen and (max-width: 900px) {
   h1,
   h2 {
@@ -405,11 +455,18 @@ select {
 }
 
 @media screen and (max-width: 600px) {
-  .swipeBtns {
+  .swipeBtns .caseBtnNext {
     position: absolute;
     top: unset;
-    left: 0;
-    right: 0;
+    left: 20%;
+    bottom: -14%;
+    z-index: 100000;
+  }
+
+  .swipeBtns .caseBtnPrev {
+    position: absolute;
+    top: unset;
+    right: 20%;
     bottom: -14%;
     z-index: 100000;
   }

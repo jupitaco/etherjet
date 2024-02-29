@@ -22,7 +22,7 @@ const NavBar = () => {
   };
 
   const linkList = [
-    { id: 1, title: 'Work', url: '/work' },
+    { id: 1, title: 'Work', url: '/#case-study' },
     { id: 2, title: 'Team', url: '/team' },
     {
       id: 4,

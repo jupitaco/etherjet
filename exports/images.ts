@@ -28,8 +28,19 @@ import DateIcon from '@/public/assets/icons/DateIcon.svg';
 import clockIcon from '@/public/assets/icons/clock.svg';
 import eyeIcon from '@/public/assets/icons/eye-show.svg';
 import penIcon from '@/public/assets/icons/pencil.svg';
+import ArrowBtn from '@/public/assets/ArrowBtn.png';
+import LicenseImage from '@/public/assets/LicenseCardImage.png';
+
+import elephantCard from '@/public/assets/elephantCard.png';
+
+import contactCard from '@/public/assets/ContactCard.svg';
+
 export const images = {
   heroImage,
+  contactCard,
+  elephantCard,
+  LicenseImage,
+  ArrowBtn,
   John,
   Sophie,
   Jane,

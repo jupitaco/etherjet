@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <Unravel />
       <WhatWeOffer />
-      <CaseStudy />
+      <CaseStudy title='Case Studies' />
       <WhatPeople />
       <Explore />
     </main>

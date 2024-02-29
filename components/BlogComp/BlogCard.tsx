@@ -35,20 +35,22 @@ const BlogCard: React.FC<IBlogCard> = ({
       <section className='p-5'>
         <h5>{title}</h5>
 
-        <div className='flex flex-col justify-between '>
-          <div className='flex gap-3'>
+        <div
+          className={`${styles.blogDeets} flex flex-col justify-between gap-2 mt-7`}
+        >
+          <div className='flex gap-3 items-center'>
             <figure className='w-[24px] h-[24px] '>
               <Image src={authorImageUlr} alt='' />
             </figure>
             <h6>{authorName}</h6>
           </div>
-          <div className='flex gap-3'>
+          <div className='flex gap-3 items-center'>
             <figure className='w-[24px] h-[24px] '>
               <Image src={images.DateIcon} alt='' />
             </figure>
             <h6>{date}</h6>
           </div>
-          <div className='flex gap-3'>
+          <div className='flex gap-3 items-center'>
             <figure className='w-[24px] h-[24px] '>
               <Image src={images.clockIcon} alt='' />
             </figure>

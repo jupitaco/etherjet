@@ -53,13 +53,13 @@ const Explore = () => {
         data-aos-duration='1500'
         className='w-full md:w-[55%]'
       >
-        <h2 className='w-ful md:w-7/12'>Explore Your Possibilities</h2>
+        <h2 className='w-ful md:w-8/12'>Explore Your Possibilities</h2>
         <p className='my-5'>
           Ready to elevate your Web3 experience? Join hundreds of happy clients
           by diving into our services and discovering how EtherEdge can empower
           your Web3 project.{' '}
         </p>
-        <form>
+        <form className='mt-10'>
           <div className='flex gape-3 justify-between my-3'>
             <input
               id='name'

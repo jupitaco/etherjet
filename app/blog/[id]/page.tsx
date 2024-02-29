@@ -7,6 +7,7 @@ import styles from './ReadMore.module.scss';
 import BlogCard from '@/components/BlogComp/BlogCard';
 import { images } from '@/exports/images';
 import AuthorCard from '@/components/BlogComp/AuthorCard';
+import LicenseCard from '@/components/BlogComp/LicenseCard';
 
 function ReadMore() {
   const { id } = useParams();
@@ -81,33 +82,7 @@ function ReadMore() {
           />
         </div>
       </section>
-
-      {/* <section className={styles.readyToJoin}>
-        <article className='d-flex align-items-center col-12 py-4 px-3 p-md-5'>
-          <div className='d-flex flex-column col-7 col-md-6'>
-            <h2>Ready to Join the Celebration?</h2>
-            <p className='d-none d-md-flex'>
-              Unleash the power of cultural tradition and innovation in the palm
-              of your hand. Experience the joy of money spraying, manage your
-              bills, send cash gifts, and celebrate like never before.
-            </p>
-            <div className='d-flex flex-column flex-md-row gap-2 col-5 col-md-7 mt-3'>
-              <figure>
-                <Image src={images.appStoreWhite} alt='' />
-              </figure>
-              <figure>
-                <Image src={images.googleStoreWhite} alt='' />
-              </figure>
-            </div>
-          </div>
-
-          <figure
-            className={`${styles.blogPhone} col-5 col-md-4 col-lg-3 mx-auto `}
-          >
-            <Image src={images.blogPhone} alt='' />
-          </figure>
-        </article>
-      </section> */}
+      <LicenseCard />
 
       <section className={`container my-9 ${styles.mightLike}`}>
         <h3 className='mt-5'>Readers love these </h3>

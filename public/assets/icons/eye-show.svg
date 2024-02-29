@@ -3,14 +3,14 @@
 <path d="M19.7471 16.201C19.7471 18.3467 18.0077 20.0861 15.862 20.0861C13.7164 20.0861 11.977 18.3467 11.977 16.201C11.977 14.0554 13.7164 12.316 15.862 12.316C18.0077 12.316 19.7471 14.0554 19.7471 16.201Z" stroke="url(#paint1_radial_0_2485)" strokeWidth="1.5"/>
 <defs>
 <radialGradient id="paint0_radial_0_2485" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(26.2881 12.2123) rotate(141.326) scale(24.7742 23.2059)">
-<stop stopColor="#7388FF"/>
-<stop offset="0.503425" stopColor="#CA73FF"/>
-<stop offset="1" stopColor="#FF739D"/>
+<stop stop-color="#7388FF"/>
+<stop offset="0.503425" stop-color="#CA73FF"/>
+<stop offset="1" stop-color="#FF739D"/>
 </radialGradient>
 <radialGradient id="paint1_radial_0_2485" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(26.2881 12.2123) rotate(141.326) scale(24.7742 23.2059)">
-<stop stopColor="#7388FF"/>
-<stop offset="0.503425" stopColor="#CA73FF"/>
-<stop offset="1" stopColor="#FF739D"/>
+<stop stop-color="#7388FF"/>
+<stop offset="0.503425" stop-color="#CA73FF"/>
+<stop offset="1" stop-color="#FF739D"/>
 </radialGradient>
 </defs>
 </svg>

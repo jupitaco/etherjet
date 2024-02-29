@@ -69,7 +69,7 @@ const Blog = () => {
                 }) => (
                   <BlogCard
                     key={id}
-                    id={id}
+                    id={`blog/${id}`}
                     title={title}
                     authorImageUlr={authorImageUlr}
                     authorName={authorName}
@@ -94,7 +94,8 @@ const Blog = () => {
           )}
         </section>
       </section>
-      <CaseStudy />
+
+      <CaseStudy title='Case Studies' />
     </main>
   );
 };
