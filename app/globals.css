@@ -241,6 +241,15 @@ select {
 }
 /* Unravel */
 /* Unravel */
+.circleHover {
+  position: relative;
+  /* padding: 20px; */
+  background-color: transparent;
+  overflow: hidden;
+  /* border: solid 1px red; */
+  transition: background-color 0.5s ease;
+  border-radius: 50px 50px 100px 100px;
+}
 
 .circleHover::before {
   content: '';
