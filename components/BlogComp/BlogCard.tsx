@@ -25,7 +25,7 @@ const BlogCard: React.FC<IBlogCard> = ({
 }) => {
   return (
     <Link
-      href={`blog/${id}`}
+      href={`${id}`}
       key={id}
       className={`${styles.blogCard} flex  flex-col justify-around md:justify-between `}
     >

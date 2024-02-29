@@ -17,11 +17,25 @@ import blog10 from '@/public/assets/blog10.png';
 import blog11 from '@/public/assets/blog11.png';
 import blog12 from '@/public/assets/blog12.png';
 import authorImage from '@/public/assets/AuthorAvatar.svg';
+import John from '@/public/assets/john.png';
+import Sophie from '@/public/assets/Sophie.png';
+import Jane from '@/public/assets/Jane.png';
+import Andie from '@/public/assets/Andie.png';
+import AliceAvarta from '@/public/assets/AliceAvarta.png';
 
 import DateIcon from '@/public/assets/icons/DateIcon.svg';
 import clockIcon from '@/public/assets/icons/clock.svg';
+import eyeIcon from '@/public/assets/icons/eye-show.svg';
+import penIcon from '@/public/assets/icons/pencil.svg';
 export const images = {
   heroImage,
+  John,
+  Sophie,
+  Jane,
+  Andie,
+  AliceAvarta,
+  penIcon,
+  eyeIcon,
   authorImage,
   blog1,
   blog2,

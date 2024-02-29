@@ -37,6 +37,7 @@ h1,
 h2,
 h3,
 h4,
+strong,
 h5 {
   font-family: var(--font-orbitron) sans-serif;
 }
@@ -88,6 +89,13 @@ select {
 }
 
 /* ==buttons=== */
+
+.bookingBtn {
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 0.8em 1.5em;
+  background: 8593e8;
+}
 
 .main-btn {
   position: relative;

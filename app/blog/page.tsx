@@ -35,7 +35,7 @@ const Blog = () => {
             </h3>
             <p className='my-4'>
               Discover the secrets to building and nurturing a thriving
-              community in the decentralized space. EtherEdge's Community
+              community in the decentralized space. EtherEdge&apos;s Community
               Managers share expert tips and real-world examples to empower your
               project.
             </p>
