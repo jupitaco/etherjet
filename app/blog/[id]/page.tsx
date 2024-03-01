@@ -17,7 +17,7 @@ function ReadMore() {
   const youMightLike = blogData.filter((item) => item.id.toString() !== id);
 
   return (
-    <main className={`${styles.readMore}  my-5`}>
+    <main className={`${styles.readMore}  my-5 overflow-x-hidden`}>
       <section className='container mt-[50px]'>
         <figure
           data-aos='zoom-out'
@@ -33,7 +33,7 @@ function ReadMore() {
         <article
           data-aos='fade-in'
           data-aos-delay='300'
-          className='container flex flex-col mt-[-250px]'
+          className='container flex flex-col mt-[-250px]  '
         >
           <h2 className='my-5'>{articleToRead?.title}</h2>
           <section className='flex flex-wrap gap-2 items-center mt-3 w-full lg:w-5/12'>

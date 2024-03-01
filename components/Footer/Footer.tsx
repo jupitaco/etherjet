@@ -7,7 +7,7 @@ import T from '@/public/assets/icons/TelegramIcon.svg';
 
 const Footer = () => {
   return (
-    <section>
+    <section className='overflow-x-hidden'>
       <footer className={styles.footer}>
         <main
           className={`container  flex flex-col md:flex-row justify-between gap-3 py-8`}
@@ -31,13 +31,13 @@ const Footer = () => {
             className={`${styles.footerW} d-flex flex-wrap gap-5 mt-5 mt-md-0`}
           >
             <li>
-              <Link href='#'>Solutions</Link>
+              <Link href='/#solution'>Solutions</Link>
             </li>
             <li>
               <Link href='/contact-us'>Contact</Link>
             </li>
             <li>
-              <Link href='#'>Company</Link>
+              <Link href='/team'>Company</Link>
             </li>
             <li>
               <Link href='/blog'>Blog</Link>

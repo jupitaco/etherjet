@@ -16,7 +16,7 @@ const Blog = () => {
   };
 
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <section className={` ${styles.blog} container flex flex-col `}>
         <div className=' mt-5 '>
           <h2> Blog </h2>

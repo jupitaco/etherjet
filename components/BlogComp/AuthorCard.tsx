@@ -13,7 +13,7 @@ const AuthorCard: React.FC<IAuthor> = ({ imageUrl, name, desc }) => {
   return (
     <section
       data-aos='fade-left'
-      className={`${styles.authorCard} flex flex-col justify-between h-[545px] py-8 px-6`}
+      className={`${styles.authorCard} flex flex-col justify-between min-h-[545px] py-8 px-6`}
     >
       <figure
         data-aos='zoom-in '

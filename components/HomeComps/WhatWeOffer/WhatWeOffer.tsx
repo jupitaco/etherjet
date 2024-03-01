@@ -35,7 +35,7 @@ export const WhatWeOffer = () => {
   ];
 
   return (
-    <section className='whatWeOffer '>
+    <section id='solution' className='whatWeOffer '>
       <div className='container text-center flex flex-col justify-center'>
         <h2 data-aos='fade-in'>What We Offer</h2>
 

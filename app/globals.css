@@ -20,13 +20,13 @@
 
 html {
   font-family: var(--font-jakarta), sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   color: var(--white);
   background: var(--black);
   font-family: var(--font-jakarta), sans-serif;
-  overflow-x: hidden;
 }
 
 img {
@@ -479,4 +479,17 @@ select {
     bottom: -14%;
     z-index: 100000;
   }
+}
+
+input[type='checkbox' i] {
+  width: 1.2em;
+  height: 1.2em;
+  border: solid 1px var(--radial);
+}
+
+input:checked[type='checkbox' i] {
+  width: 1.2em;
+  height: 1.2em;
+  border: solid 1px var(--radial);
+  background-color: var(--radial);
 }

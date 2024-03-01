@@ -3,41 +3,6 @@ import React from 'react';
 import kol from '@/public/assets/KOL.png';
 
 const Explore = () => {
-  const formData = [
-    {
-      id: 'name',
-      name: 'name',
-      type: 'text',
-      placeholder: 'Name*',
-      together: true,
-    },
-    {
-      id: 'email',
-      name: 'email',
-      type: 'email',
-      placeholder: 'Email*',
-      together: true,
-    },
-    {
-      id: 'Telegram/WhatsApp',
-      name: 'Telegram/WhatsApp',
-      type: 'text',
-      placeholder: 'Telegram/WhatsApp*',
-    },
-    {
-      id: 'companyURL',
-      name: 'companyURL',
-      type: 'url',
-      placeholder: 'Company URL',
-    },
-    {
-      id: 'message',
-      name: 'message',
-      type: 'textarea',
-      placeholder: 'Message',
-    },
-  ];
-
   return (
     <section className='explore flex flex-col md:flex-row justify-between items-center container my-[100px] '>
       <figure

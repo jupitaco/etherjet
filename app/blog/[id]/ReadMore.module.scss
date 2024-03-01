@@ -28,7 +28,7 @@
     margin: 0;
     overflow: hidden;
     border-radius: 20px;
-    min-height: 690px;
+    height: 490px;
     img {
       width: 100%;
       height: 100%;
@@ -85,35 +85,12 @@
     h6 {
       font-size: 1.1rem;
     }
+
     .banner {
       margin: 0;
       overflow: hidden;
       border-radius: 20px;
-      height: 60vh;
-    }
-
-    svg {
-      width: 24px;
-      height: 24px;
-    }
-
-    .readyToJoin {
-      max-width: 1320px;
-
-      margin: 12em auto;
-      article {
-        width: 100%;
-        margin: 0 auto;
-
-        h2 {
-          font-size: 3rem;
-          margin-bottom: 0.5em;
-        }
-
-        p {
-          font-size: 1.5rem;
-        }
-      }
+      height: 690px;
     }
   }
 }

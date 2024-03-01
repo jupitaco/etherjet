@@ -7,7 +7,7 @@ import WhatPeople from '@/components/Reviews/WhatPeople';
 
 export default function Home() {
   return (
-    <main className=''>
+    <main className='overflow-x-hidden'>
       <HeroSection />
       <Unravel />
       <WhatWeOffer />

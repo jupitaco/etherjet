@@ -7,7 +7,7 @@ import LicenseCard from '@/components/BlogComp/LicenseCard';
 
 export default function page() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <div className={`${styles.saruya} container flex flex-col`}>
         <section
           className={`${styles.saruyaHero} flex flex-col flex-col-reverse md:flex-row gap-4 justify-between items-center`}
