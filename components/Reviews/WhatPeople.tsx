@@ -2,7 +2,6 @@ import { IReview } from '@/Types/types';
 import { images } from '@/exports/images';
 import React from 'react';
 import ReviewCard from './ReviewCard';
-import ColorfulButton from '../SVGs/ColofulButton';
 
 const WhatPeople = () => {
   const RevData: IReview[] = [

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Contact.module.scss';
 import ContactForm from '@/components/ContactComps/ContactForm';
+import Reviews from '@/components/Reviews/Reviews';
 
 export default function page() {
   return (
@@ -11,6 +12,10 @@ export default function page() {
         </hgroup>
 
         <ContactForm styles={styles} />
+
+        <section className={styles.reviewWrappr}>
+          <Reviews />
+        </section>
       </section>
     </main>
   );

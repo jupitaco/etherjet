@@ -409,6 +409,24 @@ select {
 }
 
 /* ==CaseStudy Details === */
+
+/* ==Swiper== */
+
+.swiper-pagination-bullet-active {
+  background: var(--white);
+  width: 14px;
+  height: 14px;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  transform: scale(1) !important;
+  border: solid 1px var(--white);
+  opacity: 1;
+}
+/* ==Swiper== */
+
 @media screen and (max-width: 900px) {
   h1,
   h2 {

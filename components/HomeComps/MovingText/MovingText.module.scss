@@ -9,7 +9,7 @@
     display: flex;
     gap: 10px;
     white-space: nowrap;
-    animation: moveRight 10s linear infinite; /* Adjust duration as needed */
+    animation: moveRight 10s linear infinite forwards; /* Adjust duration as needed */
   }
 
   @keyframes moveRight {

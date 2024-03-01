@@ -1,57 +1,68 @@
-import React from 'react';
+'use client';
+import React, { useRef, useState } from 'react';
 import CustomCheckbox from './CustomeCheckBox/CustomeCheckBox';
 
-const ContactForm = ({ styles }: { styles: any }) => {
-  const checkboxes = [
-    {
-      id: 'KOL',
-      name: 'KOL',
-      checked: true,
-      label: 'KOL Recruitment and Management',
-    },
-    {
-      id: 'communityManagement',
-      name: 'communityManagement',
-      checked: false,
-      label: 'Community Management',
-    },
-    { id: 'advisory', name: 'advisory', checked: false, label: 'Advisory' },
-    {
-      id: 'marketMaking',
-      name: 'marketMaking',
-      checked: false,
-      label: 'Market Making',
-    },
-    {
-      id: 'graphicsDesign',
-      name: 'graphicsDesign',
-      checked: false,
-      label: 'Graphics Design',
-    },
-  ];
+const checkboxes = [
+  {
+    id: 'KOL',
+    name: 'KOL',
+    checked: true,
+    label: 'KOL Recruitment and Management',
+  },
+  {
+    id: 'communityManagement',
+    name: 'communityManagement',
+    checked: false,
+    label: 'Community Management',
+  },
+  { id: 'advisory', name: 'advisory', checked: false, label: 'Advisory' },
+  {
+    id: 'marketMaking',
+    name: 'marketMaking',
+    checked: false,
+    label: 'Market Making',
+  },
+  {
+    id: 'graphicsDesign',
+    name: 'graphicsDesign',
+    checked: false,
+    label: 'Graphics Design',
+  },
+];
 
-  const projectBudget = [
-    {
-      id: 'projectBudget',
-      value: '$1-$5000',
-    },
-    {
-      id: 'projectBudget',
-      value: '$5,000 - $20,000',
-    },
-    {
-      id: 'projectBudget',
-      value: '$20,000-$50,000',
-    },
-    {
-      id: 'projectBudget',
-      value: '$50,000+',
-    },
-  ];
+const projectBudget = [
+  {
+    id: 'projectBudget',
+    value: '$1-$5000',
+  },
+  {
+    id: 'projectBudget',
+    value: '$5,000 - $20,000',
+  },
+  {
+    id: 'projectBudget',
+    value: '$20,000-$50,000',
+  },
+  {
+    id: 'projectBudget',
+    value: '$50,000+',
+  },
+];
+const ContactForm = ({ styles }: { styles: any }) => {
+  const [selectBudget, setSelectBudget] = useState<{ [key: number]: boolean }>(
+    {},
+  );
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSelectBudget = (id: number) => {
+    setSelectBudget((prev) => ({ prev, [id]: !prev[id] }));
+  };
 
   return (
     <form
       className={`${styles.contactForm} flex flex-col md:flex-row gap-3 justify-between `}
+      ref={formRef}
     >
       <article className='w-full md:w-[55%] '>
         <div>
@@ -75,8 +86,14 @@ const ContactForm = ({ styles }: { styles: any }) => {
             Project Budget <span>(in USD) </span>{' '}
           </h3>
           <div className='flex flex-wrap gap-3 mt-5'>
-            {projectBudget.map(({ id, value }) => (
-              <div key={id} className={`${styles.budgetBtn}`}>
+            {projectBudget.map(({ id, value }, idx) => (
+              <div
+                key={idx}
+                className={`${
+                  selectBudget[idx] ? styles.activeBudgetBtn : styles.budgetBtn
+                }`}
+                onClick={() => handleSelectBudget(idx)}
+              >
                 <label id={id}> {value} </label>
               </div>
             ))}
