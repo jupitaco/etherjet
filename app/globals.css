@@ -21,6 +21,7 @@
 html {
   font-family: var(--font-jakarta), sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -475,7 +476,7 @@ select {
     background: url('../public/assets/exploreBG.png') center center no-repeat;
     background-size: cover;
     /* background-size: 100% 100%; */
-    height: 700px;
+    height: 100%;
     padding: 48px 12px;
     border-radius: 100px 2px 100px 100px;
   }
@@ -510,4 +511,64 @@ input:checked[type='checkbox' i] {
   height: 1.2em;
   border: solid 1px var(--radial);
   background-color: var(--radial);
+}
+
+.footerSVG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.kolContainer {
+  position: relative;
+  width: 100%;
+  /* background: red; */
+  margin: 0 auto;
+  /* overflow: hidden; */
+  /* height: 500px; */
+}
+
+.kolContainer figure,
+.kolContainer .c4 {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  img {
+    width: 100%;
+    height: auto !important;
+  }
+}
+
+.c1,
+.c3 {
+  transform: scale(0.7);
+}
+
+.c4 {
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+  background: #7388ff;
+}
+
+@media screen and (max-width: 900px) {
+  .c4 {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c4 {
+    max-width: 109px;
+    max-height: 109px;
+  }
 }

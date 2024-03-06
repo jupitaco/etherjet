@@ -4,11 +4,18 @@ import Link from 'next/link';
 import BrandLogo from '../BrandLogo';
 import X from '@/public/assets/icons/XIcon.svg';
 import T from '@/public/assets/icons/TelegramIcon.svg';
+import FooterLines from '../SVGs/FooterLines';
+import FooterLines2 from '../SVGs/FooterLines2';
+import FooterLines3 from '../SVGs/FooterLines3';
 
 const Footer = () => {
   return (
     <section className='overflow-x-hidden'>
       <footer className={styles.footer}>
+        <FooterLines />
+        <FooterLines2 />
+        <FooterLines3 />
+
         <main
           className={`container  flex flex-col md:flex-row justify-between gap-3 py-8`}
         >

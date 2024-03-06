@@ -30,6 +30,9 @@ import eyeIcon from '@/public/assets/icons/eye-show.svg';
 import penIcon from '@/public/assets/icons/pencil.svg';
 import ArrowBtn from '@/public/assets/ArrowBtn.png';
 import LicenseImage from '@/public/assets/LicenseCardImage.png';
+import c1 from '@/public/assets/c1.png';
+import c2 from '@/public/assets/c2.png';
+import mainImage from '@/public/assets/mainImage.png';
 
 import elephantCard from '@/public/assets/elephantCard.png';
 
@@ -37,6 +40,9 @@ import contactCard from '@/public/assets/ContactCard.svg';
 
 export const images = {
   heroImage,
+  c1,
+  c2,
+  mainImage,
   contactCard,
   elephantCard,
   LicenseImage,

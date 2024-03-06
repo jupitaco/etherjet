@@ -1,17 +1,24 @@
 import Image from 'next/image';
 import React from 'react';
-import kol from '@/public/assets/KOL.png';
+import KOLAnimation from '../SVGs/KOLAnimation';
 
 const Explore = () => {
   return (
-    <section className='explore flex flex-col md:flex-row justify-between items-center container my-[100px] '>
-      <figure
+    <section className='explore flex flex-col md:flex-row justify-between container my-[100px] '>
+      <div
+        data-aos-duration='1500'
+        data-aos='zoom-out'
+        className='w-10/12 mx-auto md:w-[30%] h-[500px] flex justify-center overflow-hidden p-[20px]'
+      >
+        <KOLAnimation />
+      </div>
+      {/* <figure
         data-aos-duration='1500'
         data-aos='zoom-out'
         className='w-full md:w-[30%]'
       >
         <Image src={kol} alt='' />
-      </figure>
+      </figure> */}
 
       <article
         data-aos='fade-right'
